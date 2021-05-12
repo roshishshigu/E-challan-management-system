@@ -3,16 +3,20 @@ body,
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1080/1107/Street-car-traffic-jam_1920x1080.jpg");
+		
 		}
+
+
+	
+
 		.user_card {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: rgba(142, 151, 155, 0.89);
+            background: rgba(142, 151, 155, 0.89);
 			position: relative;
 			display: flex;
-			justify-content:center;
+			justify-content: center;
 			flex-direction: column;
 			padding: 10px;
 			border-radius: 5px;
@@ -25,16 +29,20 @@ body,
 
 		#form-title{
 			color: #fff;
+			
 		}
+
 		.login_btn {
 			width: 100%;
-			background: #6aee87 !important;
-			color: rgb(26, 18, 18) !important;
+			background: #6ef195 !important;
+			color: rgb(15, 14, 14) !important;
 		}
-		.login_btn:focus {
-			box-shadow: none !important;
-			outline: 0px !important;
+		
+		.login_btn:hover{
+			background-color: #f0a958;
+			color: black;
 		}
+
 		.login_container {
 			padding: 0 2rem;
 		}
@@ -48,4 +56,11 @@ body,
 		.input_pass:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
+		}
+
+		#messages{
+			background-color: grey;
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
 		}

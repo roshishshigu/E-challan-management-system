@@ -14,7 +14,7 @@
 
 <button class="backBtn"><a href="/index"><span class="fa fa-arrow-left"></span></a></button>
 <button class="backBtn2"><a href="/challan">View Challans</a></button>
-
+<button class="enlargeBtn" onclick="myFunction()"><span class="fa fa-print"></span></button>
   <div class="container" id="container">
     <div class="header">
 	<span><img src="/static/images/logo.png" alt="" style="width: 50px; margin-left: 45%;"> <h2>Rule Violation Form</h2></span>
@@ -66,8 +66,13 @@
 </div>
 
 
+<script>
+  function myFunction(){
+    window.print()
+  }
+
+
+</script>
 
 </body>
 </html>
-
-

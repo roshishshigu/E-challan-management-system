@@ -7,11 +7,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
 
 
 </head>
-<body>
+<body style="background-image: url(/static/images/background.jfif);">
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
@@ -27,13 +27,13 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="username" placeholder="Username..." class="form-control">
+							<input type="text" name="username" placeholder="Username..." class="form-control" required>
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-								<input type="password" name="password" placeholder="Password..." class="form-control" >
+								<input type="password" name="password" placeholder="Password..." class="form-control" required>
 						</div>
 
 							<div class="d-flex justify-content-center mt-3 login_container">
@@ -42,13 +42,10 @@
 					</form>
 
 				</div>
-                {% for message in messages %}
-                    <p id="messages">{{message}}</p>
-                {% endfor %}
 		
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="#" class="ml-2" style="color: #08fc82; ">Sign Up</a>
+					<h6 style="color: rgb(255, 7, 7);">Only Authorized Users can Login. </h6>	
 					</div>
 			
 				</div>

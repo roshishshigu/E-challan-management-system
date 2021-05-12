@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/help.css' %}" />
+
+  <title>Smart बारी</title>
+ 
+</head>
+<body style="background-image: url(/static/images/background.jfif);">
+  <button class="backBtn"><a href="/index"><span class="fa fa-arrow-left"></span></a></button>
+ 
+  <header id="home" class="header">
+
+  
+  <main id="first"><br><br>
+  
+  <details open>
+  
+    <summary>We are always here for you</summary>
+    <div class="faq__content">
+      <p>if you have any queries please expand the contents to see the documentations.</p>
+    </div>
+    {% for i in Help %} 
+  </details>
+
+   <details>
+    
+    <summary>{{i.head}}</summary>
+    <div class="faq__content">
+      <p>{{i.desc}} </p>
+    </div>
+    {% endfor %}
+  </details> 
+
+  
+   </main>
+
+  </header>
+
+ 
+</body>
+ 
+
+    
+    </html>

@@ -5,15 +5,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   
-    <link rel="stylesheet" href="contact.css" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
 
   </head>
   <body style="background-image: url(/static/images/background.jfif);">
 
     <button class="backBtn"><a href="/index"><span class="fa fa-arrow-left"></span></a></button>
     <form method="POST" class="decor">
-    
+    {% csrf_token %}
       <div class="form-left-decoration"></div>
       <div class="form-right-decoration"></div>
       <div class="circle"></div>
